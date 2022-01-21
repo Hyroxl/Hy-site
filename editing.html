@@ -1,0 +1,101 @@
+<!--dropdown menu code-->
+<div id="dropdown">
+    <nav>
+        <p>title</p>
+        <ul>
+            <li><a href="#"></a><h3 style="color: white">Main Site</h3>
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/index.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/main%20site/main%20page.html">Random Shenanigans</a></li>
+                    <li><a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/main%20site/pg3.html">( ͡° ͜ʖ ͡°)</a></li>
+                    <li><a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/main%20site/pg4.html">Audio Test</a></li>
+                </ul>
+                </li>
+            <li><a href="#"></a><h3 style="color: white;">Other Pages</h3>
+            <ul>
+                <a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/Other%20Pages/cats.html">Cats</a>
+                <a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/Other%20Pages/music%20stuff.html">Music Stuff</a>
+                <a href="http://127.0.0.1:5501/Ty's%20html%20and%20css%20testing%20site/Other%20Pages/records.html">Records</a>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+ <!--stylesheetlink-->
+ <link rel="stylesheet"
+ href="#.css">
+
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+}
+/*dropdown menu*/
+#dropdown nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+}
+
+#dropdown nav p {
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+}
+
+#dropdown nav ul {
+    float: left;
+}
+
+#dropdown nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#dropdown nav ul li a {
+    display: block;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 11px 14px;
+    text-decoration: none;
+}
+
+#dropdown nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(32, 32, 32);
+    padding: 10px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#dropdown nav ul li:hover ul {
+    display: block;
+}
+
+
+#dropdown nav ul li ul li a {
+    width: 135px;
+    border-radius: 4px;
+}
+
+#dropdown nav ul li ul li a {
+    padding: 8px 14px;
+}
+
+#dropdown nav ul li ul a:hover {
+   background-color: #585858;
+   
+}
+
+#dropdown nav ul li ul a{
+    border-radius: 4px 4px 4px 4px;
+}
+
+</style>
