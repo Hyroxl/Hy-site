@@ -75,7 +75,7 @@ href="#.css">
 #dropdown nav ul li ul {
     display: none;
     position: absolute;
-    background-color: rgb(32, 32, 32);
+    background-color: #202020;
     padding: 10px;
     border-radius: 4px 4px 4px 4px;
 }
@@ -103,4 +103,28 @@ background-color: #585858;
     border-radius: 4px 4px 4px 4px;
 }
 
+</style>
+
+<!--skip nav-->
+<header>
+    <a id="skipnav" href="#main-conent">Skip Navigation</a>
+</header>
+
+<!--put in css doc-->
+<style>
+    /*skip nav*/
+    #skipnav{
+        color: white;
+        text-decoration: none;
+        background: #585858;
+        padding: .5rem 1.5rem;
+        border-radius: 0 0 .25rem .25rem;
+        position: absolute;
+        left: 0.5rem;
+        transform: translateY(-120%);
+        transition: transform 325ms ease-in;
+    }
+    #skipnav:focus{
+    transform: translateY(0);
+    }
 </style>
