@@ -65,8 +65,8 @@ nav ul li ul li a {
 }
 
 nav ul li ul a:hover {
-   background-color: #585858;
-   
+background-color: #585858;
+
 }
 
 nav ul li ul a{
@@ -75,4 +75,12 @@ nav ul li ul a{
 /*logo*/
 div{
     float: right;
+}
+/*git hub link*/
+#gitpage{
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 65px;
+    right: 0;
+    top: 0;
 }
