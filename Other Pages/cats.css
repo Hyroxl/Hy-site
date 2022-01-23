@@ -2,19 +2,14 @@
     margin: 0;
     padding: 0;
 }
-/* backgrounf image for main page*/
-body {
-    background-image: url(img/spaaaaaaaaaaaaaaaaaaaaace.jpg);
-    background-size: cover;
-}
-/*drop down menu*/
-nav {
+/*dropdown menu*/
+#dropdown nav {
     width: 100%;
     height: 60px;
     background-color: rgb(0, 0, 0);
 }
 
-nav p {
+#dropdown nav p {
     font-family: Arial;
     color: rgb(255, 255, 255);
     font-size: 24px;
@@ -23,17 +18,17 @@ nav p {
     padding: 0px 20px;
 }
 
-nav ul {
+#dropdown nav ul {
     float: left;
 }
 
-nav ul li {
+#dropdown nav ul li {
     float: left;
     list-style: none;
     position: relative;
 }
 
-nav ul li a {
+#dropdown nav ul li a {
     display: block;
     font-family: Arial;
     color: rgb(255, 255, 255);
@@ -42,47 +37,35 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li ul {
+#dropdown nav ul li ul {
     display: none;
     position: absolute;
-    background-color: rgb(32, 32, 32);
+    background-color: #202020;
     padding: 10px;
     border-radius: 4px 4px 4px 4px;
 }
 
-nav ul li:hover ul {
+#dropdown nav ul li:hover ul {
     display: block;
 }
 
 
-nav ul li ul li a {
+#dropdown nav ul li ul li a {
     width: 135px;
     border-radius: 4px;
 }
 
-nav ul li ul li a {
+#dropdown nav ul li ul li a {
     padding: 8px 14px;
 }
 
-nav ul li ul a:hover {
+#dropdown nav ul li ul a:hover {
 background-color: #585858;
 
 }
 
-nav ul li ul a{
+#dropdown nav ul li ul a{
     border-radius: 4px 4px 4px 4px;
-}
-/*logo*/
-div{
-    float: right;
-}
-/*git hub link*/
-#gitpage{
-    position: absolute;
-    margin-top: 10px;
-    margin-right: 65px;
-    right: 0;
-    top: 0;
 }
     /*skip nav*/
     #skipnav {
