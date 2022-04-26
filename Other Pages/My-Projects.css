@@ -85,3 +85,40 @@ background-color: #585858;
     html{
         scroll-behavior: smooth;
     }
+
+/* Element | https://hyroxl.github.io/Hy-site/Other%20Pages/My-projects.html */
+
+#main-content > ul:nth-child(10) > li:nth-child(2) > h3:nth-child(1) {
+  /* width: 2px; */
+  width: 1860px;
+}
+
+/* Element | https://hyroxl.github.io/Hy-site/Other%20Pages/My-projects.html */
+
+#main-content > ul:nth-child(10) > li:nth-child(3) > h3:nth-child(1) {
+  width: 1840px;
+}
+
+/* Element | https://hyroxl.github.io/Hy-site/Other%20Pages/My-projects.html */
+
+#main-content > ul:nth-child(10) > li:nth-child(4) > h3:nth-child(1) {
+  width: 1815px;
+}
+
+/* Element | https://hyroxl.github.io/Hy-site/Other%20Pages/My-projects.html */
+
+#main-content > ul:nth-child(10) > li:nth-child(5) > h3:nth-child(1) {
+  width: 1838px;
+}
+
+/* Element | https://hyroxl.github.io/Hy-site/Other%20Pages/My-projects.html */
+
+#main-content > ul:nth-child(10) > li:nth-child(6) > h3:nth-child(1) {
+  width: 1827px;
+}
+
+/* Element | https://hyroxl.github.io/Hy-site/Other%20Pages/My-projects.html */
+
+.link {
+  width: 300px;
+}
