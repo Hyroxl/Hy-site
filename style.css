@@ -4,7 +4,7 @@
 }
 /* backgrounf image for main page*/
 body {
-    background-image: url('/img/IMG_4151.jpg');
+    background-image: url("/img/IMG_4151.jpg");
     background-size: cover;
 }
 /*drop down menu*/
