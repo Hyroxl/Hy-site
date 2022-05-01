@@ -39,6 +39,46 @@
       #dropdown > nav:nth-child(1) > ul:nth-child(2) > li:nth-child(1) {
         margin-right: 20px;
       }
+      .dropbtn {
+        background-color: rgb(97, 224, 97);
+        color: #280049;
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 4px 4px 4px 4px;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover{
+        background-color: #004900;
+      }
+      .dropdown2 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(97, 224, 97);
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 2px 2px 2px 2px;
+      }
+      
+      .dropdown-content a {
+        color: #280049;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content:hover {
+        background-color: #004900;
+      }
+      .dropdown2 a:hover {background-color: #004900}
+      
+      .show {display: block;}
     </style>
   </header>
   <body>
@@ -82,11 +122,33 @@
         <br><br><br>
         <h1>Weekly Note</h1>
         <br><br>
-        <div id="4/30/22">
-            <h3>(4/30/2022) Hi guys this is the first weekly note.</h3>
-            <h3>every week i will post a short note about what ive been doing.</h3>
-            <h3>i hope yall have a nice week!</h3>
-        </div>
+        <div class="dropdown2">
+          <button onclick="myFunction()" class="dropbtn">Notes ▽</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/Hy-site/main site/4-30-22.html">4-30-2022</a>
+          </div>
+        </div> 
     </div>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
   </body>
 </html>
