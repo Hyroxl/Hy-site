@@ -42,7 +42,7 @@
       .dropbtn {
         background-color: rgb(97, 224, 97);
         color: #280049;
-        padding: 16px;
+        padding: 10px 15px 10px 15px;
         font-size: 16px;
         border-radius: 4px 4px 4px 4px;
         cursor: pointer;
@@ -60,11 +60,14 @@
         display: none;
         position: absolute;
         background-color: rgb(97, 224, 97);
-        min-width: 160px;
+        min-width: 120px;
         overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
         z-index: 1;
-        border-radius: 2px 2px 2px 2px;
+        border-radius: 4px 4px 4px 4px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
       }
       
       .dropdown-content a {
@@ -72,13 +75,24 @@
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-      }
-      .dropdown-content:hover {
-        background-color: #004900;
+        border-radius: 2px 2px 2px 2px;
       }
       .dropdown2 a:hover {background-color: #004900}
+
+      dropdown-content a:hover {
+        background-color: #004900;
+      }
       
       .show {display: block;}
+
+      div.dropdown-content { 
+        /*REMEMBER TO CHANGE HEIGHT TO 150 AFTER MORE NOTES ARE ADDED!!!!*/
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 5px;
+     } 
     </style>
   </header>
   <body>
@@ -122,12 +136,12 @@
         <br><br><br>
         <h1>Weekly Note</h1>
         <br><br>
-        <div class="dropdown2">
-          <button onclick="myFunction()" class="dropbtn">Notes ▽</button>
-          <div id="myDropdown" class="dropdown-content">
+         <div class="dropdown2">
+           <button onclick="myFunction()" class="dropbtn">Past Notes ▽</button>
+           <div id="myDropdown" class="dropdown-content">
             <a href="/Hy-site/main site/weekly notes/4-30-22.html">4-30-2022</a>
           </div>
-        </div> 
+          </div> 
     </div>
     <script>
       /* When the user clicks on the button, 
